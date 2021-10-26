@@ -1,0 +1,129 @@
+library('tidyverse')
+library(kormaps2014)
+maps<-read.csv(file = "C:\\Users\\Admin\\Downloads\\map.csv",sep = ",",header = T)
+maps
+str(changeCode(kormap1))
+library(mapproj)
+library(ggiraphExtra)
+str(maps)
+unique(changeCode(kormap1)[,c(12,15)])# 전처리용 지역 코드 확인
+
+  #2016
+  ggChoropleth(data=subset(maps,year==2016),aes
+               (fill=살인,
+                 map_id=code,
+                 tooltip=발생지별),
+               title="2016년도 지역별 살인통계",
+               map=kormap1,
+               interactive=T,)
+  ggChoropleth(data=subset(maps,year==2016),aes
+               (fill=강도,
+                 map_id=code,
+                 tooltip=발생지별),
+               map=kormap1,
+               title="2016년도 지역별 강도통계",
+               interactive=T)
+  ggChoropleth(data=subset(maps,year==2016),aes
+               (fill=성폭력,
+                 map_id=code,
+                 tooltip=발생지별),
+               map=kormap1,
+               title="2016년도 지역별 성폭력통계",
+               interactive=T)
+  ggChoropleth(data=subset(maps,year==2016),aes
+               (fill=방화,
+                 map_id=code,
+                 tooltip=발생지별),
+               map=kormap1,
+               title="2016년도 지역별 방화통계",
+               interactive=T)
+  #2017
+  ggChoropleth(data=subset(maps,year==2017),aes
+               (fill=살인,
+                 map_id=code,
+                 tooltip=발생지별),
+               title="2017년도 지역별 살인통계",
+               map=kormap1,
+               interactive=T,)
+  ggChoropleth(data=subset(maps,year==2017),aes
+               (fill=강도,
+                 map_id=code,
+                 tooltip=발생지별),
+               map=kormap1,
+               title="2017년도 지역별 강도통계",
+               interactive=T)
+  ggChoropleth(data=subset(maps,year==2017),aes
+               (fill=성폭력,
+                 map_id=code,
+                 tooltip=발생지별),
+               map=kormap1,
+               title="2017년도 지역별 성폭력통계",
+               interactive=T)
+  ggChoropleth(data=subset(maps,year==2017),aes
+               (fill=방화,
+                 map_id=code,
+                 tooltip=발생지별),
+               map=kormap1,
+               title="2017년도 지역별 방화통계",
+               interactive=T)
+  
+  #2018
+  ggChoropleth(data=subset(maps,year==2018),aes
+               (fill=살인,
+                 map_id=code,
+                 tooltip=발생지별),
+               title="2018년도 지역별 살인통계",
+               map=kormap1,
+               interactive=T,)
+  ggChoropleth(data=subset(maps,year==2018),aes
+               (fill=강도,
+                 map_id=code,
+                 tooltip=발생지별),
+               map=kormap1,
+               title="2018년도 지역별 강도통계",
+               interactive=T)
+  ggChoropleth(data=subset(maps,year==2018),aes
+               (fill=성폭력,
+                 map_id=code,
+                 tooltip=발생지별),
+               map=kormap1,
+               title="2018년도 지역별 성폭력통계",
+               interactive=T)
+  ggChoropleth(data=subset(maps,year==2018),aes
+               (fill=방화,
+                 map_id=code,
+                 tooltip=발생지별),
+               map=kormap1,
+               title="2018년도 지역별 방화통계",
+               interactive=T)
+  
+  #2019
+  ggChoropleth(data=subset(maps,year==2019),aes
+               (fill=살인,
+                 map_id=code,
+                 tooltip=발생지별),
+               title="2019년도 지역별 살인통계",
+               map=kormap1,
+               interactive=T,)
+  ggChoropleth(data=subset(maps,year==2019),aes
+               (fill=강도,
+                 map_id=code,
+                 tooltip=발생지별),
+               map=kormap1,
+               title="2019년도 지역별 강도통계",
+               interactive=T)
+  ggChoropleth(data=subset(maps,year==2019),aes
+               (fill=성폭력,
+                 map_id=code,
+                 tooltip=발생지별),
+               map=kormap1,
+               title="2019년도 지역별 성폭력통계",
+               interactive=T)
+  ggChoropleth(data=subset(maps,year==2019),aes
+               (fill=방화,
+                 map_id=code,
+                 tooltip=발생지별),
+               map=kormap1,
+               title="2019년도 지역별 방화통계",
+               interactive=T)
+  
